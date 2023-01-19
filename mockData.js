@@ -1,4 +1,4 @@
-const tempUrl = 'https://www.linkedin.com/in/andrewpungprakearti/'
+export const tempUrl = 'https://www.linkedin.com/in/andrewpungprakearti/'
 
 export const NavData = {
   LinkData: [

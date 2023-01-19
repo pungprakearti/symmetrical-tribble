@@ -1,4 +1,6 @@
+import Button from '@/components/Button'
 import cx from 'classnames'
+import { tempUrl } from 'mockData'
 import styles from '@/styles/index.module.scss'
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
       <h1>h1 friends!</h1>
       <h2>h2 friends!</h2>
       <h3>h3 friends!</h3>
+      <Button buttonText='Button' buttonUrl={tempUrl} small />
+      asdfasdfasdfasdf asdf adsf asdf asdf adsf<div>asdfasdfadsf ads</div>
     </div>
   )
 }

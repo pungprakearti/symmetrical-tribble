@@ -1,0 +1,19 @@
+@import 'styles/main.scss';
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $orange;
+  font-size: rem(16px);
+  font-weight: 700;
+  text-decoration: none;
+  color: $white;
+  border-radius: 10px;
+  column-gap: $spacing-standard;
+}
+
+.small {
+  max-width: 127px;
+  padding: $spacing-micro 0;
+}
