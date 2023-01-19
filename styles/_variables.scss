@@ -13,7 +13,7 @@ $spacing-xxx-large: 120px;
 $spacing-xx-large: 80px;
 $spacing-x-large: 64px;
 $spacing-large: 48px;
-$spacing-semi: 32px;
+$spacing-semi: 30px;
 $spacing-standard: 24px;
 $spacing-small: 16px;
 $spacing-tiny: 8px;
@@ -21,11 +21,11 @@ $spacing-micro: 4px;
 
 // Miscellaneous
 $base-font-size: $spacing-small;
-$container-width: 1312px;
+$container-width: 1088px;
 $container-padding-desktop: $spacing-x-large;
 $container-padding-mobile: $spacing-standard;
-$grid-gutter-width: $spacing-standard;
-$grid-margin-height: $spacing-standard;
+$grid-gutter-width: $spacing-semi;
+$grid-margin-height: $spacing-semi;
 $transition-duration-standard: 0.25s;
 
 // Convert pixels to rem
