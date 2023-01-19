@@ -1,7 +1,7 @@
 export const tempUrl = 'https://www.linkedin.com/in/andrewpungprakearti/'
 
-export const NavData = {
-  LinkData: [
+export const navData = {
+  linkData: [
     {
       mainText: 'Overview',
       mainUrl: '/',
@@ -11,7 +11,7 @@ export const NavData = {
       dropDownData: [
         {
           DDText: 'Bagel bites',
-          DDLink: tempUrl,
+          DDUrl: tempUrl,
         },
       ],
     },
@@ -20,11 +20,11 @@ export const NavData = {
       dropDownData: [
         {
           DDText: 'Bean and cheese burrito',
-          DDLink: tempUrl,
+          DDUrl: tempUrl,
         },
         {
           DDText: 'Frozen tamales',
-          DDLink: tempUrl,
+          DDUrl: tempUrl,
         },
       ],
     },
