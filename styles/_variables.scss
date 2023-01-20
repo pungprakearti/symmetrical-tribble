@@ -3,11 +3,13 @@ $brand: #263640;
 $white: #ffffff;
 $black: #000000;
 $gray: #929a9f;
+$lightgray: #c4c4c4;
+$offwhite: #f5f8fa;
 $orange: #ff9902;
 
 // Spacing
 $spacing-largest: 160px;
-$spacing-xxx-large: 120px;
+$spacing-xxx-large: 100px;
 $spacing-xx-large: 90px;
 $spacing-x-large: 60px;
 $spacing-large: 40px;
@@ -19,7 +21,7 @@ $spacing-micro: 4px;
 
 // Miscellaneous
 $base-font-size: $spacing-small;
-$container-width: 1096px;
+$container-width: 1216px;
 $container-padding-desktop: $spacing-x-large;
 $container-padding-mobile: $spacing-standard;
 $grid-gutter-width: $spacing-semi;
