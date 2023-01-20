@@ -13,8 +13,15 @@
   font-style: normal;
 }
 
+@mixin arial() {
+  font-family: arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+}
+
 @mixin h1() {
-  @include roboto;
+  @include arial;
 
   margin: 0;
   color: $brand;
@@ -28,7 +35,7 @@
 }
 
 @mixin h2() {
-  @include roboto;
+  @include arial;
 
   margin: 0;
   color: $gray;
@@ -44,7 +51,7 @@
 }
 
 @mixin h3() {
-  @include roboto;
+  @include arial;
 
   margin: 0;
   color: $brand;
@@ -59,7 +66,7 @@
 }
 
 @mixin body() {
-  @include roboto;
+  @include arial;
 
   color: $brand;
   font-size: rem(20px);
