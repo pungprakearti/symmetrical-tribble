@@ -23,10 +23,14 @@ type Props = {
 }
 
 const Nav: React.FC<Props> = ({ linkData, buttonText, buttonUrl }) => {
+  // This has no real functionality right now, but with multiple pages,
+  // this is how you would change the selected link.
   const [selected, setSelected] = useState('Overview')
 
+  // Build nav links and drop down elements
   const navLinksEl = linkData.map((topData) => (
     <div className={styles.topLinkWrap}>
+      {/* If there is drop down elements, create it */}
       {topData.dropDownData ? (
         <div className={styles.topLinkWithDropDown}>
           <div
