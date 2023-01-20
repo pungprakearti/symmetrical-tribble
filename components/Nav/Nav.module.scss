@@ -34,11 +34,13 @@
 
 .topLink {
   position: relative;
+  padding-bottom: rem(9px);
+  padding-left: 1px;
+  padding-right: 1px;
   font-size: rem(16px);
   font-weight: 700;
   text-decoration: none;
   line-height: 1;
-  padding-bottom: rem(9px);
   border-bottom: 2px solid transparent;
 
   &.selected,
