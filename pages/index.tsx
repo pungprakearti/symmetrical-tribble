@@ -5,12 +5,44 @@ import styles from '@/styles/index.module.scss'
 
 export default function Home() {
   return (
-    <div className={cx(styles.wrap, ' container')}>
+    <>
       <Nav
         linkData={navData.linkData}
         buttonText={navData.buttonText}
         buttonUrl={navData.buttonUrl}
       />
-    </div>
+      <div className='container'>
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf
+        asdfadsfads fasdf asdf asdf asdfadsfads fasdf asdf asdf asdfadsfads
+        fasdf asdf asdf asdfadsfads fasdf asdf asdf{' '}
+      </div>
+    </>
   )
 }

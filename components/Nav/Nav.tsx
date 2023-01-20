@@ -2,21 +2,22 @@ import { useState } from 'react'
 import Link from 'next/link'
 import cx from 'classnames'
 import Button from '@/components/Button'
+import { ArrowDropDown, Logo } from '@/components/Svg'
 import styles from './Nav.module.scss'
 
+type DDData = {
+  DDText: string
+  DDUrl: string
+}
+
+type TLData = {
+  mainText: string
+  mainUrl?: string
+  dropDownData?: DDData[]
+}
+
 type Props = {
-  linkData: [
-    {
-      mainText: string
-      mainUrl?: string
-      dropDownData?: [
-        {
-          DDText: string
-          DDUrl: string
-        }
-      ]
-    }
-  ]
+  linkData: TLData[]
   buttonText: string
   buttonUrl: string
 }
@@ -24,37 +25,57 @@ type Props = {
 const Nav: React.FC<Props> = ({ linkData, buttonText, buttonUrl }) => {
   const [selected, setSelected] = useState('Overview')
 
-  let temp = []
-
   const navLinksEl = linkData.map((topData) => (
     <div className={styles.topLinkWrap}>
       {topData.dropDownData ? (
-        <div className={cx(styles.topLink, { [styles.selected]: selected })}>
-          {topData.mainText}
-          <div>
-            <>
-              {console.log(topData.dropDownData)}
+        <div className={styles.topLinkWithDropDown}>
+          <div
+            className={cx(styles.topLink, {
+              [styles.selected]: selected === topData.mainText,
+            })}
+            key={topData.mainText}
+          >
+            {topData.mainText}
+            <div className={styles.dropDown}>
               {topData.dropDownData.map((bottomData) => (
-                <Link href={bottomData.DDUrl}>{bottomData.DDText}</Link>
+                <Link
+                  className={styles.dropDownItem}
+                  href={bottomData.DDUrl}
+                  key={bottomData.DDText}
+                >
+                  {bottomData.DDText}
+                </Link>
               ))}
-            </>
+            </div>
+          </div>
+          <div className={styles.icon}>
+            <ArrowDropDown />
           </div>
         </div>
       ) : (
-        <Link
-          href={topData.mainUrl ? topData.mainUrl : ''}
-          className={cx(styles.topLink, { [styles.selected]: selected })}
+        <div
+          className={cx(styles.topLink, {
+            [styles.selected]: selected === topData.mainText,
+          })}
         >
-          {topData.mainText}
-        </Link>
+          <Link
+            className={styles.mainLink}
+            href={topData.mainUrl ? topData.mainUrl : ''}
+            key={topData.mainText}
+          >
+            {topData.mainText}
+          </Link>
+        </div>
       )}
     </div>
   ))
 
   return (
-    <nav className={styles.wrap}>
-      LOGO
-      <div>{navLinksEl}</div>
+    <nav className={cx(styles.wrap, 'container')}>
+      <Link className={styles.logo} href='/'>
+        <Logo />
+      </Link>
+      <div className={styles.navLinks}>{navLinksEl}</div>
       <Button buttonText={buttonText} buttonUrl={buttonUrl} small />
     </nav>
   )

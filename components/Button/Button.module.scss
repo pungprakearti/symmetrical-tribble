@@ -11,9 +11,29 @@
   color: $white;
   border-radius: 10px;
   column-gap: $spacing-standard;
+  flex-grow: 100;
+  border: 2px solid transparent;
+  transition: border-color $transition-duration-standard ease,
+    background-color $transition-duration-standard ease,
+    color $transition-duration-standard ease;
+
+  svg path {
+    transition: fill $transition-duration-standard ease;
+  }
+
+  &:focus,
+  &:hover {
+    background-color: $white;
+    color: $orange;
+    border-color: $orange;
+
+    & > svg path {
+      fill: $orange;
+    }
+  }
 }
 
 .small {
   max-width: 127px;
-  padding: $spacing-micro 0;
+  padding: calc(#{$spacing-micro} - 2px) 0;
 }

@@ -1,5 +1,94 @@
 @import 'styles/main.scss';
 
 .wrap {
-  border: 1px solid violet;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: rem($spacing-x-large);
+  margin-bottom: $spacing-xx-large;
+}
+
+.logo {
+  display: flex;
+}
+
+.navLinks {
+  display: flex;
+  column-gap: $spacing-large;
+}
+
+.mainLink,
+.topLink {
+  transition: color $transition-duration-standard ease;
+
+  &:focus,
+  &:hover {
+    color: $orange;
+  }
+}
+
+.mainLink {
+  text-decoration: none;
+  color: $brand;
+}
+
+.topLink {
+  position: relative;
+  font-size: rem(16px);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: 1;
+  padding-bottom: rem(9px);
+  border-bottom: 2px solid transparent;
+
+  &.selected,
+  &.selected > .mainLink {
+    color: $orange;
+    border-color: $orange;
+  }
+}
+
+.topLinkWithDropDown {
+  display: flex;
+
+  :focus,
+  :hover {
+    cursor: pointer;
+
+    & > .dropDown {
+      opacity: 1;
+      height: 100px;
+    }
+  }
+}
+
+.icon {
+  margin-top: rem(-14px);
+  margin-left: 12px;
+}
+
+.dropDown {
+  position: absolute;
+  top: calc(#{$spacing-semi} - 5px);
+  left: 0;
+  height: 0;
+  width: 200px;
+  padding-top: 5px;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity $transition-duration-standard ease,
+    height $transition-duration-standard ease;
+}
+
+.dropDownItem {
+  display: block;
+  text-decoration: none;
+  margin-bottom: 12px;
+  color: $brand;
+  transition: color $transition-duration-standard ease;
+
+  &:focus,
+  &:hover {
+    color: $orange;
+  }
 }
