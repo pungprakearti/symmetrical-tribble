@@ -6,13 +6,13 @@ import Hero from '@/components/Hero'
 
 export default function Home() {
   return (
-    <>
+    <div className={styles.wrap}>
       <Nav
         linkData={navData.linkData}
         buttonText={navData.buttonText}
         buttonUrl={navData.buttonUrl}
       />
       <Hero text={heroData.text} video={heroData.video} />
-    </>
+    </div>
   )
 }
