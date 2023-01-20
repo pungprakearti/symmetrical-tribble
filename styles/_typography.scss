@@ -68,8 +68,8 @@
 @mixin body() {
   @include arial;
 
-  color: $brand;
-  font-size: rem(20px);
+  color: $gray;
+  font-size: rem(16px);
   font-weight: 400;
-  line-height: 1.6em;
+  line-height: (28/16);
 }

@@ -1,0 +1,20 @@
+@import 'styles/main.scss';
+
+.wrap {
+  border: 1px solid violet;
+}
+
+// In the designs, this is a little over the 4th grid section,
+// so I just made it 4 because it might have been a mistake.
+// This would be something that you would discuss with the designer
+.left {
+  @include makeFixedCol(1, 5);
+
+  padding-top: rem($spacing-xxx-large);
+}
+
+.right {
+  @include makeFixedCol(7, 13);
+
+  background-color: red;
+}

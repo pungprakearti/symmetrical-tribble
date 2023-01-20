@@ -23,7 +23,7 @@ export const navData = {
           DDUrl: tempUrl,
         },
         {
-          DDText: 'Frozen tamales',
+          DDText: 'Stouffers Mac and Cheese',
           DDUrl: tempUrl,
         },
       ],
@@ -37,41 +37,20 @@ export const navData = {
   buttonUrl: tempUrl,
 }
 
-export const heroData = [
-  {
-    text: {
-      header: 'Lorem ipsum dolor',
-      title: 'Lorem ipsum dolor sit amet, est mollis evertitur ut',
-      body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
-      buttonText: 'Learn More',
-      buttonUrl: tempUrl,
-    },
-    video:
-      'https://static.vecteezy.com/system/resources/previews/007/660/851/mp4/skyscrapper-building-under-a-cloudy-sky-video.mp4',
+export const heroData = {
+  text: {
+    header: 'Lorem ipsum dolor',
+    title: 'Lorem ipsum dolor sit amet, est mollis evertitur ut',
+    body: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    buttonText: 'Learn More',
+    buttonUrl: tempUrl,
   },
-  {
-    text: {
-      header: 'Lorem dolor ipsum',
-      title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
-      body: 'Aliquet sagittis id consectetur purus ut faucibus. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. At volutpat diam ut venenatis tellus in. Mi quis hendrerit dolor magna eget est lorem ipsum dolor. Morbi tincidunt ornare massa eget egestas purus viverra accumsan in.',
-      buttonText: 'Learn More',
-      buttonUrl: tempUrl,
-    },
-    video:
-      'https://static.vecteezy.com/system/resources/previews/005/691/257/mp4/looking-up-at-manhattan-skyscrapers-at-sunset-new-york-city-usa-video.mp4',
-  },
-  {
-    text: {
-      header: 'Aliquam id diam',
-      title: 'Egestas sed sed risus pretium quam vulputate dignissim',
-      body: 'Morbi tincidunt ornare massa eget egestas purus viverra accumsan in. Tristique nulla aliquet enim tortor at auctor urna nunc id. Gravida in fermentum et sollicitudin. Metus vulputate eu scelerisque felis imperdiet proin fermentum.',
-      buttonText: 'Learn More',
-      buttonUrl: tempUrl,
-    },
-    video:
-      'https://static.vecteezy.com/system/resources/previews/005/931/772/mp4/skyscrapes-and-the-forest-park-at-sunrise-video.mp4',
-  },
-]
+  video: [
+    'https://static.vecteezy.com/system/resources/previews/007/660/851/mp4/skyscrapper-building-under-a-cloudy-sky-video.mp4',
+    'https://static.vecteezy.com/system/resources/previews/005/691/257/mp4/looking-up-at-manhattan-skyscrapers-at-sunset-new-york-city-usa-video.mp4',
+    'https://static.vecteezy.com/system/resources/previews/005/931/772/mp4/skyscrapes-and-the-forest-park-at-sunrise-video.mp4',
+  ],
+}
 
 export const textAndImageData = {
   text: {

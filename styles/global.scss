@@ -44,6 +44,12 @@ h3 {
   @include h3;
 }
 
+p {
+  @include body;
+
+  margin: 0;
+}
+
 // Container with no grid
 .container {
   @include container;

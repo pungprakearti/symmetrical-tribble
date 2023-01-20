@@ -41,6 +41,7 @@
   font-weight: 700;
   text-decoration: none;
   line-height: 1;
+  color: $brand;
   border-bottom: 2px solid transparent;
 
   &.selected,
@@ -65,7 +66,7 @@
 }
 
 .icon {
-  margin-top: rem(-14px);
+  margin-top: rem(-10px);
   margin-left: 12px;
 }
 
