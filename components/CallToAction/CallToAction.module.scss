@@ -1,0 +1,29 @@
+@import 'styles/main.scss';
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: rem(70px);
+}
+
+.left {
+  position: relative;
+  width: 65%;
+}
+
+.icon {
+  position: absolute;
+  top: rem(-25px);
+  left: -40px;
+}
+
+.title {
+  margin-bottom: rem(15px);
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  width: 35%;
+}

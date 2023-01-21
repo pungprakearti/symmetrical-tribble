@@ -70,6 +70,8 @@ export const textAndImageData = {
 export const CTAData = {
   title: 'Wissenswertes',
   body: 'Diam maecenas ultricies mi eget mauris pharetra et. Placerat duis ultricies lacus sed turpis tincidunt id aliquet. Vestibulum lectus mauris ultrices eros.',
+  buttonText: 'Learn More',
+  buttonUrl: tempUrl,
 }
 
 export const AccordionData = {
