@@ -33,6 +33,25 @@
       fill: $orange;
     }
   }
+
+  &.dark {
+    max-width: 200px;
+    background-color: transparent;
+    padding: 0;
+    justify-content: flex-start;
+    border-radius: 0;
+    column-gap: 16px;
+    border: none;
+
+    &:focus,
+    &:hover {
+      color: $gray;
+
+      svg path {
+        fill: $gray;
+      }
+    }
+  }
 }
 
 .small {

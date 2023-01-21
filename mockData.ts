@@ -55,13 +55,16 @@ export const heroData = {
 export const textAndImageData = {
   text: {
     header: 'Dictum at tempor commodo',
-    title: 'Nunc pulvinar sapien et ligula. Neque aliquam vestibulum morbi',
-    body: 'Consectetur purus ut faucibus pulvinar elementum integer. Lacinia at quis risus sed. Magna fringilla urna porttitor rhoncus dolor purus non. Sed elementum tempus egestas sed sed.',
+    title:
+      'Nunc pulvinar sapien et ligula. Neque aliquam vestibulum pulvinar sapien et.',
+    body: 'Consectetur purus ut faucibus pulvinar elementum integer. Lacinia at quis risus sed. Magna fringilla urna porttitor rhoncus dolor purus non. Pulvinar elementum integer. Sed elementum tempus egestas sed fringilla urna sed.',
     buttonText: 'Lesen Sie weiter',
     buttonUrl: tempUrl,
   },
-  image:
-    'https://as2.ftcdn.net/v2/jpg/02/07/77/55/1000_F_207775546_hQFvR2b5LwJY2ZGKvYvEFdaiue6NskJP.jpg',
+  image: {
+    src: 'https://as2.ftcdn.net/v2/jpg/02/07/77/55/1000_F_207775546_hQFvR2b5LwJY2ZGKvYvEFdaiue6NskJP.jpg',
+    alt: 'Inside a white office building',
+  },
 }
 
 export const CTAData = {
