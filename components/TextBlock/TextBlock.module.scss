@@ -2,12 +2,34 @@
 
 .header {
   margin-bottom: rem(15px);
+
+  .dark & {
+    margin-bottom: rem(27px);
+  }
 }
 
 .title {
   margin-bottom: rem(12px);
+
+  .dark & {
+    color: $white;
+    margin-bottom: rem(23px);
+  }
 }
 
 .body {
   margin-bottom: rem(23px);
+
+  .dark & {
+    color: $white;
+
+    &:after {
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      background-color: rgba($white, 0.2);
+      margin-top: rem(25px);
+    }
+  }
 }

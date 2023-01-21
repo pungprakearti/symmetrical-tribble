@@ -7,10 +7,23 @@ type Props = {
   buttonText: string
   buttonUrl: string
   small?: boolean
+  dark?: boolean
 }
 
-const Button: React.FC<Props> = ({ buttonText, buttonUrl, small = false }) => (
-  <Link className={cx(styles.wrap, { [styles.small]: small })} href={buttonUrl}>
+const Button: React.FC<Props> = ({
+  buttonText,
+  buttonUrl,
+  small = false,
+  dark = false,
+}) => (
+  <Link
+    className={cx(
+      styles.wrap,
+      { [styles.small]: small },
+      { [styles.dark]: dark }
+    )}
+    href={buttonUrl}
+  >
     {buttonText}
     <ChevronRight />
   </Link>

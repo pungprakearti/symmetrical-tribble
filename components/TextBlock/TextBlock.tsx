@@ -1,3 +1,4 @@
+import cx from 'classnames'
 import Button from '@/components/Button'
 import styles from './TextBlock.module.scss'
 
@@ -7,6 +8,7 @@ type Props = {
   body: string
   buttonText: string
   buttonUrl: string
+  dark?: boolean
 }
 
 const TextBlock: React.FC<Props> = ({
@@ -15,12 +17,13 @@ const TextBlock: React.FC<Props> = ({
   body,
   buttonText,
   buttonUrl,
+  dark = false,
 }) => (
-  <div className={styles.wrap}>
+  <div className={cx(styles.wrap, { [styles.dark]: dark })}>
     <h2 className={styles.header}>{header}</h2>
     <h1 className={styles.title}>{title}</h1>
     <p className={styles.body}>{body}</p>
-    <Button buttonText={buttonText} buttonUrl={buttonUrl} />
+    <Button buttonText={buttonText} buttonUrl={buttonUrl} dark={dark} />
   </div>
 )
 

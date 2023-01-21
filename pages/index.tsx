@@ -1,8 +1,8 @@
-import cx from 'classnames'
+import { navData, heroData, textAndImageData } from 'mockData'
 import Nav from '@/components/Nav'
-import { navData, heroData } from 'mockData'
-import styles from '@/styles/index.module.scss'
 import Hero from '@/components/Hero'
+import TextAndImage from '@/components/TextAndImage'
+import styles from '@/styles/index.module.scss'
 
 export default function Home() {
   return (
@@ -13,6 +13,10 @@ export default function Home() {
         buttonUrl={navData.buttonUrl}
       />
       <Hero text={heroData.text} video={heroData.video} />
+      <TextAndImage
+        text={textAndImageData.text}
+        image={textAndImageData.image}
+      />
     </div>
   )
 }

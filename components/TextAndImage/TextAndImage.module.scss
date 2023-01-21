@@ -1,0 +1,73 @@
+@import 'styles/main.scss';
+
+.outer {
+  background-color: $offwhite;
+
+  &:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: rem(599px);
+    background-color: $white;
+    margin-top: rem(-468px);
+  }
+}
+
+.left {
+  @include makeFixedCol(1, 11);
+
+  position: relative;
+  background-color: $brand;
+}
+
+.right {
+  @include makeFixedCol(8, 13);
+
+  position: relative;
+}
+
+.textBlockWrap {
+  // 5 grid section width - You have to do the calculations because
+  // grid inside grid kills processing power
+  width: calc(
+    (((100% - #{$grid-gutter-width} * 9) / 10) * 5) +
+      (#{$grid-gutter-width} * 4)
+  );
+
+  // 1 grid section and 1 gutter width
+  margin-left: calc(
+    ((100% - #{$grid-gutter-width} * 9) / 10) + #{$grid-gutter-width}
+  );
+
+  padding-top: rem(96px);
+  padding-bottom: rem(108px);
+}
+
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+  height: 662px;
+  width: 100%;
+  margin-top: rem(-528px);
+  box-shadow: 0 10px 50px rgba($black, 0.1);
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 662px;
+}
+
+.graphic1 {
+  position: absolute;
+  bottom: rem(-140px);
+  right: -293px;
+}
+
+.graphic2 {
+  position: absolute;
+  bottom: rem(-80px);
+  left: -138px;
+}
