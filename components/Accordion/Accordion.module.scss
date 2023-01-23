@@ -3,7 +3,14 @@
 $transition-duration-accordion: 0.5s;
 
 .wrap {
+  position: relative;
   margin-bottom: 160px;
+}
+
+.graphic {
+  position: absolute;
+  top: 321px;
+  left: -259px;
 }
 
 .left {

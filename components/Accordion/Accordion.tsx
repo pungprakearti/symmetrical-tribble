@@ -1,6 +1,11 @@
 import { useState, useRef } from 'react'
 import cx from 'classnames'
-import { ArrowRight, CloseAccordion, PlayVideo } from '@/components/Svg'
+import {
+  ArrowRight,
+  CloseAccordion,
+  GraphicLargeSquares,
+  PlayVideo,
+} from '@/components/Svg'
 import styles from './Accordion.module.scss'
 
 type Image = {
@@ -82,6 +87,9 @@ const Accordion: React.FC<Props> = ({ media, stats, accordion }) => {
 
   return (
     <div className={cx(styles.wrap, 'container-grid')}>
+      <div className={styles.graphic}>
+        <GraphicLargeSquares />
+      </div>
       <div className={styles.left}>
         <div className={styles.videoWrap}>
           <video
