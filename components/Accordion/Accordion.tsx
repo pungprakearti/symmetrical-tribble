@@ -36,7 +36,7 @@ type Props = {
 }
 
 const Accordion: React.FC<Props> = ({ media, stats, accordion }) => {
-  const [active, setActive] = useState(1)
+  const [active, setActive] = useState(0)
   const [showPlay, setShowPlay] = useState(true)
 
   const videoRef = useRef<HTMLVideoElement>(null)
