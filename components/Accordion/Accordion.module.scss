@@ -51,7 +51,7 @@ $transition-duration-accordion: 0.5s;
 .playVideoIcon {
   position: absolute;
   left: 50%;
-  top: rem(50%);
+  top: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity $transition-duration-standard ease;
