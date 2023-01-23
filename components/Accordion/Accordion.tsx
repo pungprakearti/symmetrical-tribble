@@ -41,6 +41,7 @@ const Accordion: React.FC<Props> = ({ media, stats, accordion }) => {
 
   const videoRef = useRef<HTMLVideoElement>(null)
 
+  // Toggle which accordion item is expanded
   const handleSelect = (accNum: number) => {
     setActive(accNum)
   }

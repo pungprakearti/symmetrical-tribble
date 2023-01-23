@@ -4,12 +4,12 @@ $transition-duration-accordion: 0.5s;
 
 .wrap {
   position: relative;
-  margin-bottom: 160px;
+  margin-bottom: rem(160px);
 }
 
 .graphic {
   position: absolute;
-  top: 321px;
+  top: rem(321px);
   left: -259px;
 }
 
@@ -30,7 +30,7 @@ $transition-duration-accordion: 0.5s;
   height: 380px;
   width: calc(50% - (#{$grid-gutter-width} / 2));
   margin-right: $grid-gutter-width;
-  margin-top: 70px;
+  margin-top: rem(70px);
   cursor: pointer;
   transition: box-shadow $transition-duration-standard ease;
 
@@ -51,7 +51,7 @@ $transition-duration-accordion: 0.5s;
 .playVideoIcon {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: rem(50%);
   transform: translate(-50%, -50%);
   opacity: 0;
   transition: opacity $transition-duration-standard ease;
@@ -69,7 +69,7 @@ $transition-duration-accordion: 0.5s;
   height: 250px;
 
   &:not(:last-child) {
-    margin-bottom: $grid-gutter-width;
+    margin-bottom: rem($grid-gutter-width);
   }
 }
 
@@ -86,9 +86,9 @@ $transition-duration-accordion: 0.5s;
 
 .statsWrap {
   display: flex;
-  padding-bottom: 10px;
-  margin-top: 48px;
-  margin-bottom: 60px;
+  padding-bottom: rem(10px);
+  margin-top: rem(48px);
+  margin-bottom: rem(60px);
 }
 
 .stat {
@@ -102,7 +102,7 @@ $transition-duration-accordion: 0.5s;
 }
 
 .statNumber {
-  margin-bottom: 5px;
+  margin-bottom: rem(5px);
 }
 
 .statText {
@@ -139,12 +139,12 @@ $transition-duration-accordion: 0.5s;
 
 .toggleIcon {
   position: relative;
-  margin-top: -7px;
+  margin-top: rem(-7px);
 }
 
 .vertical {
   position: absolute;
-  top: 5px;
+  top: rem(5px);
   left: 5px;
   transform: rotate(90deg);
   opacity: 1;
@@ -153,8 +153,8 @@ $transition-duration-accordion: 0.5s;
 }
 
 .accordionItem {
-  padding-bottom: 30.5px;
-  margin-bottom: 30.5px;
+  padding-bottom: rem(30.5px);
+  margin-bottom: rem(30.5px);
   border-bottom: 1px solid rgba($black, 0.1);
 }
 
