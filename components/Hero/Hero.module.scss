@@ -12,12 +12,13 @@
 }
 
 // In the designs, this is a little over the 4th grid section,
-// so I just made it 4 because it might have been a mistake.
-// This would be something that I would discuss with the designer
+// so I added an extra gutter width to make it like the designs, but
+// this would be something that I would discuss with the designer
 .left {
   @include makeFixedCol(1, 5);
 
   position: relative;
+  width: calc(100% + #{$grid-gutter-width});
   padding-top: rem($spacing-xxx-large);
 }
 

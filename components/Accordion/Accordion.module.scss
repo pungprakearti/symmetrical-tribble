@@ -88,7 +88,7 @@ $transition-duration-accordion: 0.5s;
   display: flex;
   padding-bottom: rem(10px);
   margin-top: rem(48px);
-  margin-bottom: rem(60px);
+  margin-bottom: rem($spacing-x-large);
 }
 
 .stat {
@@ -117,7 +117,7 @@ $transition-duration-accordion: 0.5s;
   line-height: (28/18);
   font-weight: 400;
   color: $brand;
-  opacity: 0.25;
+  opacity: 0.2;
   cursor: pointer;
   transition: margin-bottom $transition-duration-accordion ease,
     opacity $transition-duration-accordion ease;
@@ -161,6 +161,7 @@ $transition-duration-accordion: 0.5s;
 .accordionText {
   height: 0;
   opacity: 0;
+  letter-spacing: -0.3px;
   color: $brand;
   transition: height $transition-duration-accordion ease,
     opacity $transition-duration-accordion ease;
