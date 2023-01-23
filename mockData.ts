@@ -74,12 +74,18 @@ export const CTAData = {
   buttonUrl: tempUrl,
 }
 
-export const AccordionData = {
+export const accordionData = {
   media: {
     video:
       'https://static.vecteezy.com/system/resources/previews/006/434/913/mp4/4k-timelapse-sequence-of-toronto-canada-the-gardiner-expressway-from-day-to-night-as-seen-from-the-top-of-a-skyscraper-free-video.mp4',
-    image1: 'https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
-    image2: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg',
+    image1: {
+      src: 'https://images.pexels.com/photos/302769/pexels-photo-302769.jpeg',
+      alt: 'Cityscape at sundown',
+    },
+    image2: {
+      src: 'https://images.pexels.com/photos/323705/pexels-photo-323705.jpeg',
+      alt: 'Looking up at a building with a blue hue',
+    },
   },
   stats: [
     {
@@ -102,7 +108,7 @@ export const AccordionData = {
     },
     {
       title: 'Egestas pretium aenean pharetra',
-      body: 'Ut etiam sit amet nisl. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet.',
+      body: 'Ut etiam sit amet nisl. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque viverra. Nulla facilisi morbi.',
     },
   ],
 }

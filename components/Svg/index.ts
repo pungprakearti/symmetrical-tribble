@@ -1,5 +1,7 @@
 export { default as ArrowDropDown } from './ArrowDropDown'
+export { default as ArrowRight } from './ArrowRight'
 export { default as ChevronRight } from './ChevronRight'
+export { default as CloseAccordion } from './CloseAccordion'
 export { default as GraphicCircle } from './GraphicCircle'
 export { default as GraphicLargeCircle } from './GraphicLargeCircle'
 export { default as GraphicLargeSquares } from './GraphicLargeSquares'

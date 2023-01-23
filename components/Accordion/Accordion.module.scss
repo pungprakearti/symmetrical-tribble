@@ -1,0 +1,193 @@
+@import 'styles/main.scss';
+
+$transition-duration-accordion: 0.5s;
+
+.wrap {
+  position: relative;
+  margin-bottom: rem(160px);
+}
+
+.graphic {
+  position: absolute;
+  top: rem(321px);
+  left: -259px;
+}
+
+.left {
+  @include makeFixedCol(1, 7);
+
+  display: flex;
+}
+
+.videoWrap,
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.videoWrap {
+  height: 380px;
+  width: calc(50% - (#{$grid-gutter-width} / 2));
+  margin-right: $grid-gutter-width;
+  margin-top: rem(70px);
+  cursor: pointer;
+  transition: box-shadow $transition-duration-standard ease;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 5px 25px rgba($black, 0.5);
+  }
+}
+
+.video {
+  position: absolute;
+  height: 380px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.playVideoIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity $transition-duration-standard ease;
+
+  &.showPlay {
+    opacity: 1;
+  }
+}
+
+.images {
+  width: calc(50% - (#{$grid-gutter-width} / 2));
+}
+
+.imageWrap {
+  height: 250px;
+
+  &:not(:last-child) {
+    margin-bottom: rem($grid-gutter-width);
+  }
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+}
+
+.right {
+  @include makeFixedCol(8, 13);
+}
+
+.statsWrap {
+  display: flex;
+  padding-bottom: rem(10px);
+  margin-top: rem(48px);
+  margin-bottom: rem(60px);
+}
+
+.stat {
+  height: 60px;
+
+  &:not(:last-child) {
+    margin-right: 60px;
+    padding-right: 60px;
+    border-right: 1px solid rgba($black, 0.1);
+  }
+}
+
+.statNumber {
+  margin-bottom: rem(5px);
+}
+
+.statText {
+  font-size: rem(14px);
+}
+
+.accordionTitle {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  font-size: rem(18px);
+  line-height: (28/18);
+  font-weight: 400;
+  color: $brand;
+  opacity: 0.25;
+  cursor: pointer;
+  transition: margin-bottom $transition-duration-accordion ease,
+    opacity $transition-duration-accordion ease;
+
+  &:focus,
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.activeArrow {
+  position: absolute;
+  left: -25px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity $transition-duration-accordion ease,
+    transform $transition-duration-accordion ease;
+}
+
+.toggleIcon {
+  position: relative;
+  margin-top: rem(-7px);
+}
+
+.vertical {
+  position: absolute;
+  top: rem(5px);
+  left: 5px;
+  transform: rotate(90deg);
+  opacity: 1;
+  transition: opacity $transition-duration-accordion ease,
+    transform $transition-duration-accordion ease;
+}
+
+.accordionItem {
+  padding-bottom: rem(30.5px);
+  margin-bottom: rem(30.5px);
+  border-bottom: 1px solid rgba($black, 0.1);
+}
+
+.accordionText {
+  height: 0;
+  opacity: 0;
+  color: $brand;
+  transition: height $transition-duration-accordion ease,
+    opacity $transition-duration-accordion ease;
+}
+
+.active {
+  .accordionTitle,
+  .accordionText,
+  .toggleIcon,
+  .activeArrow {
+    opacity: 1;
+  }
+
+  .accordionTitle {
+    margin-bottom: 11px;
+    cursor: default;
+  }
+
+  .activeArrow {
+    transform: translateX(0);
+  }
+
+  .accordionText {
+    height: auto;
+  }
+
+  .vertical {
+    transform: translate(-5px, -5px);
+  }
+}
