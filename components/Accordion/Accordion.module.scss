@@ -24,6 +24,13 @@ $transition-duration-accordion: 0.5s;
   width: calc(50% - (#{$grid-gutter-width} / 2));
   margin-right: $grid-gutter-width;
   margin-top: 70px;
+  cursor: pointer;
+  transition: box-shadow $transition-duration-standard ease;
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 5px 25px rgba($black, 0.5);
+  }
 }
 
 .video {
@@ -32,6 +39,19 @@ $transition-duration-accordion: 0.5s;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.playVideoIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity $transition-duration-standard ease;
+
+  &.showPlay {
+    opacity: 1;
+  }
 }
 
 .images {

@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import cx from 'classnames'
-import { ArrowRight, CloseAccordion } from '@/components/Svg'
+import { ArrowRight, CloseAccordion, PlayVideo } from '@/components/Svg'
 import styles from './Accordion.module.scss'
 
 type Image = {
@@ -32,9 +32,22 @@ type Props = {
 
 const Accordion: React.FC<Props> = ({ media, stats, accordion }) => {
   const [active, setActive] = useState(1)
+  const [showPlay, setShowPlay] = useState(true)
+
+  const videoRef = useRef<HTMLVideoElement>(null)
 
   const handleSelect = (accNum: number) => {
     setActive(accNum)
+  }
+
+  const handleVideo = () => {
+    if (videoRef?.current?.paused) {
+      videoRef?.current.play()
+      setShowPlay(false)
+    } else {
+      videoRef?.current?.pause()
+      setShowPlay(true)
+    }
   }
 
   const statsEl = stats.map((stat, i) => (
@@ -71,9 +84,24 @@ const Accordion: React.FC<Props> = ({ media, stats, accordion }) => {
     <div className={cx(styles.wrap, 'container-grid')}>
       <div className={styles.left}>
         <div className={styles.videoWrap}>
-          <video className={styles.video} loop>
+          <video
+            className={styles.video}
+            loop
+            ref={videoRef}
+            onClick={handleVideo}
+          >
             <source src={media.video} type='video/mp4' />
           </video>
+
+          {/* Play button */}
+          <div
+            className={cx(styles.playVideoIcon, {
+              [styles.showPlay]: showPlay,
+            })}
+            onClick={handleVideo}
+          >
+            <PlayVideo />
+          </div>
         </div>
         <div className={styles.images}>
           <div className={styles.imageWrap}>

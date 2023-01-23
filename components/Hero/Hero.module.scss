@@ -39,10 +39,10 @@
   box-shadow: 0 10px 50px rgba($black, 0.1);
   display: none;
   transition: box-shadow $transition-duration-standard ease;
+  cursor: pointer;
 
   &:focus,
   &:hover {
-    cursor: pointer;
     box-shadow: 0 10px 50px rgba($black, 0.5);
   }
 
