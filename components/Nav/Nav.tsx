@@ -29,7 +29,7 @@ const Nav: React.FC<Props> = ({ linkData, buttonText, buttonUrl }) => {
 
   // Build nav links and drop down elements
   const navLinksEl = linkData.map((topData) => (
-    <div className={styles.topLinkWrap}>
+    <div className={styles.topLinkWrap} key={topData.mainText}>
       {/* If there is drop down elements, create it */}
       {topData.dropDownData ? (
         <div className={styles.topLinkWithDropDown}>
